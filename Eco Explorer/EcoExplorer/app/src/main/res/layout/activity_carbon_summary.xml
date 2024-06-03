@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_summary_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Carbon Emission Summary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/text_summary_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Carbon Emission: "
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_weekly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weekly"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/btn_monthly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monthly"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/btn_six_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6 Months"
+            android:layout_margin="8dp"/>
+    </LinearLayout>
+
+</LinearLayout>
