@@ -1,0 +1,57 @@
+________________________________________________
+Normal login:
+1. Click register to create an account
+
+OR:
+
+2.Use preset account
+JohnS
+password88
+
+
+________________________________________________
+Mock payment system 
+Credit card number must any 16 numbers
+CVV is any 3 numbers
+
+
+
+
+________________________________________________
+Retail dashboard login:
+1. Go to:
+http://localhost/harvesthub/board/retailer.php
+
+2. Login with either (retailers can also be added but here are the preset accounts):
+
+groceryuser
+supermarketpass
+
+espressouser
+cafepass
+
+groveuser
+restaurantpass
+	
+heavenuser
+restaurantpass
+
+greengroceruser
+grocerpass
+	
+italyuser
+italypass
+
+
+
+________________________________________________
+Admin dashboard login:
+1. Go to:
+http://localhost/harvesthub/admin/admin.php
+
+
+2.Login with:
+control1
+pass1
+
+

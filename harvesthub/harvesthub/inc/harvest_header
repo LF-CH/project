@@ -1,0 +1,56 @@
+<?php
+$loggedIn = isset($_SESSION['userid']);
+include './database/connect.php';
+
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="cart.js"></script>
+</head>
+<body>
+<header>
+<nav>
+<div class="logo-area">
+    <img src="images/food-waste.png" alt="Logo" class="nav-logo">
+    <h3><a class="logo" href="index.php">HarvestHub</a></h3>
+</div>
+
+        <ul class="nav_links">
+            <?php if ($loggedIn): ?>
+                <li><a  href="index.php">Home</a></li>
+                <li><a  href="profile.php">Profile</a></li>
+                <li><a  href="browse_retailers.php">Browse retailers</a></li>
+                <li><a class="cta" href="logout.php">Logout</a></li>
+            <?php else: ?>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="browse_retailers.php">Browse retailers</a></li>
+                <li><a class="cta" href="login.php">Sign In</a></li>
+                <li><a class="cta" href="register.php">Register</a></li>
+            <?php endif; ?>
+        </ul>
+        <div class="burger">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+        </div>
+    </nav>
+</header>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const burger = document.querySelector('.burger');
+        const navLinks = document.querySelector('.nav_links');
+
+        burger.addEventListener('click', () => {
+            
+            navLinks.classList.toggle('nav-active');
+
+            burger.classList.toggle('toggle');
+        });
+    });
+</script>
+
+</body>
+</html>
